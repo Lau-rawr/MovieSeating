@@ -11,36 +11,26 @@ public class SeatingMain {
         if (args.length > 0) {
             GetFile fileProcessor = new GetFile(args[0]);
             Theater movieTheater = new Theater();
-
             try {
                 File file = new File(args[0]);
                 FileReader fileReader = new FileReader(file);
                 BufferedReader bufferedReader = new BufferedReader(fileReader);
 
-                /* Read and process the file */
-                String newEntry = bufferedReader.readLine();
-
-                while (newEntry != null) {
-                    int output = movieTheater.fillReservation(newEntry);
-                    if (output == 1) {
-                        System.out
-                                .println("Invalid number of Seats");
+                /* Read first line of file*/
+                String nextReservation = bufferedReader.readLine();
+                /* Read the file, and see if reservation can be filled */
+                while (nextReservation != null) {
+                    int output = movieTheater.fillReservation(nextReservation);
+                    if (output == -2) {
+                        System.out.println("Invalid number of Seats "+ nextReservation);
                     }
                     if (output == -1) {
-                        System.out
-                                .println("Sorry, cannot process request due to Insufficient seats");
+                        System.out .println("Sorry, cannot process request due to Insufficient seats" + nextReservation);
                     }
-
-                    newEntry = bufferedReader.readLine();
+                    nextReservation = bufferedReader.readLine();
                 }
-                /* Writing to File */
+                /* Writing to File , passing our seating chart with it */
                 fileProcessor.writeToFile(movieTheater.getResults());
-
-
-//                /* Calling the Test method */
-//                TestTheaterSeating test = new TestTheaterSeating();
-//                MovieTheater testObject = new MovieTheater();
-//                test.testMe(testObject);
 
             } catch (FileNotFoundException ex) {
                 System.err.println("Input file not Found.");
