@@ -30,14 +30,14 @@ For the purpose of public safety, assume that a buffer of three and/or one row i
 
 
 
-##Goals
+## Goals
 
 1.Customer satisfaction - first priority as a group would rather sit together than seperately in better viewing seats
 2.Customer safety 
 
 
 
-##Optimizations
+## Optimizations
 1. Incorportating a better view with sitting together as the first priority
 2. Run time, for checking for consecutive seats for the party was a slow process in my algorithm this could be speed up by using a bit more space and putting pointers to the first open seat and how many consecutive seats are available
 3. Fitting in as many customers as possible to maximize profit may include splitting up more parties or taking reservations out of order
