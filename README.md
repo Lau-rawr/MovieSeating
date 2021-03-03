@@ -2,7 +2,7 @@
 **<h1 align="center"> --Movie Theater Seating Challenge--</h1>**
 
 
-## Programming Language
+**Programming Language**
 Java
 
 ## Problem
@@ -10,7 +10,7 @@ Java
 For the purpose of public safety, assume that a buffer of three and/or one row is required."
 
 
-**Approach**
+## Approach
 
 * Using a Greedy Algorithm Implemention :
 * Starting from the upper left corner and filling in seats from 0 to 20 and rows from 9 to 0.
@@ -19,7 +19,7 @@ For the purpose of public safety, assume that a buffer of three and/or one row i
 * used global variables so row, column, seat buffers, and row buffers could be changed very easye
 
 
-**Assumptions**
+ ## Assumptions
 
 1. The buffer row of one is the same seat in rows above and below the current reseravtions
 2. The File reservation numbers were in order
