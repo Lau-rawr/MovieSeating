@@ -1,5 +1,5 @@
 
-**<h1 align="center"> --Movie Theater Seating Challenge--</h1>**
+**<h1 align="center"> --~ Movie Theater Seating Challenge ~--</h1>**
 
 
 **Programming Language**
