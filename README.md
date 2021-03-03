@@ -5,9 +5,11 @@
 **Programming Language**
 Java
 
+
 ## Problem
 "is to design and write a seat assignment program to maximize both customer satisfaction and customer safety. 
 For the purpose of public safety, assume that a buffer of three and/or one row is required."
+
 
 
 ## Approach
@@ -19,20 +21,23 @@ For the purpose of public safety, assume that a buffer of three and/or one row i
 * used global variables so row, column, seat buffers, and row buffers could be changed very easye
 
 
- ## Assumptions
+
+## Assumptions
 
 1. The buffer row of one is the same seat in rows above and below the current reseravtions
 2. The File reservation numbers were in order
 3. If the reservation could nto be filled due to lack of seats or was a a number below 1, then Printed to the console was the reservation details along with the response of why it was nto booked, this reservation was also not added to the output file
 
 
-**Goals**
+
+##Goals
 
 1.Customer satisfaction - first priority as a group would rather sit together than seperately in better viewing seats
 2.Customer safety 
 
 
-**Optimizations**
+
+##Optimizations
 1. Incorportating a better view with sitting together as the first priority
 2. Run time, for checking for consecutive seats for the party was a slow process in my algorithm this could be speed up by using a bit more space and putting pointers to the first open seat and how many consecutive seats are available
 3. Fitting in as many customers as possible to maximize profit may include splitting up more parties or taking reservations out of order
